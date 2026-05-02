@@ -26,7 +26,7 @@ export default function Dashboard() {
     }
 
     try {
-      const res = await axios.post("http://localhost:8000/api/analyze-cv", formData, {
+      const res = await axios.post("https://ai-cv-ranker-dwbq-coxpaj778-adeelhussain20255s-projects.vercel.app/api/analyze-cv", formData, {
         headers: { "Content-Type": "multipart/form-data" }
       });
       setResult(res.data);
